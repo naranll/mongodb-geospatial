@@ -4,7 +4,7 @@ import Restaurant from "../models/restaurantModel.js";
 const restaurantRouter = express.Router();
 
 restaurantRouter.post("/nearrestaurant", async function (req, res) {
-    const currentLocation = req.body.address;
+    const currentLocation = req.body.location;
 
     console.log("res address", currentLocation);
     const nearestrestaurant = await Restaurant.find({
