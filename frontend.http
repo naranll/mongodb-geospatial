@@ -1,0 +1,17 @@
+POST  http://localhost:5070/nearrestaurant HTTP/1.1
+Content-Type: application/json
+
+{
+    "address": {
+        "type":  "Point" ,
+        "coordinates": [-73.9925306, 40.7309346]
+    }
+}
+
+
+
+###
+
+GET http://localhost:5070/addrestaurant HTTP/1.1
+Content-Type: application/json
+
